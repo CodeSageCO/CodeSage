@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equinox SaaS Solution</title>
+    <title>CodeSage</title>
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Google Fonts link -->
@@ -196,11 +196,24 @@
     .mt-8.flex.justify-center.space-x-12 {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 1rem;
-        width: 100%;
+        justify-content: space-between;
         padding: 0 1rem;
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    .mt-8.flex.justify-center.space-x-12 > div {
+        flex: 1;
+        text-align: center;
+        padding: 0 0.5rem;
+    }
+
+    .mt-8.flex.justify-center.space-x-12 h4 {
+        font-size: 1.5rem;
+    }
+
+    .mt-8.flex.justify-center.space-x-12 p {
+        font-size: 0.9rem;
     }
 
     /* Pop-up adjustments */
@@ -249,8 +262,12 @@
     }
 
     /* Stats section for smaller screens */
-    .mt-8.flex.justify-center.space-x-12 > div {
-        padding: 0 0.5rem;
+    .mt-8.flex.justify-center.space-x-12 h4 {
+        font-size: 1.25rem;
+    }
+
+    .mt-8.flex.justify-center.space-x-12 p {
+        font-size: 0.8rem;
     }
 
     /* Popup adjustments */
