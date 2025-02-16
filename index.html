@@ -156,9 +156,8 @@
     .flex.justify-center.mt-8.space-x-8 {
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
-        margin: 1rem;
-        space-x-0;
+        gap: 2rem;  /* Increased from 1rem to 2rem for more spacing */
+        margin: 2rem 1rem; /* Increased top/bottom margin */
     }
 
     .flex.justify-center.mt-8.space-x-8 > div {
@@ -220,6 +219,8 @@
 
     /* What We Do section images */
     .flex.flex-col.items-center.w-1/4 {
+        display: flex;
+        flex-direction: column-reverse; /* This will put the text above the image */
         width: 90%;
         margin: 2rem auto;
     }
@@ -232,13 +233,28 @@
 
     /* Creative section stats */
     .mt-8.flex.justify-center.space-x-12 {
-        flex-direction: column;
-        gap: 2rem;
-        margin: 1rem;
+        flex-direction: row; /* Keep horizontal layout */
+        flex-wrap: wrap; /* Allow wrapping if needed */
+        justify-content: space-around;
+        gap: 1rem;
+        padding: 0 1rem;
     }
 
     .mt-8.flex.justify-center.space-x-12 > div {
-        margin: 1rem 0;
+        margin: 0;
+        width: auto;
+        text-align: center;
+        flex: 0 1 auto;
+    }
+
+    /* Adjust stats text size for better mobile fit */
+    .mt-8.flex.justify-center.space-x-12 p {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .mt-8.flex.justify-center.space-x-12 h4 {
+        font-size: 1.75rem;
     }
 
     /* Text adjustments */
@@ -333,6 +349,19 @@
     .popup-content {
         height: auto;
         min-height: 250px;
+    }
+
+    /* Further adjustments for very small screens */
+    .mt-8.flex.justify-center.space-x-12 {
+        padding: 0 0.5rem;
+    }
+
+    .mt-8.flex.justify-center.space-x-12 > div {
+        padding: 0 0.25rem;
+    }
+
+    .mt-8.flex.justify-center.space-x-12 h4 {
+        font-size: 1.5rem;
     }
 }
 
