@@ -133,7 +133,100 @@
 
 /* Close button style */
 
+/* Add these responsive styles at the end of your style section */
+@media (max-width: 768px) {
+    /* Header adjustments */
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
 
+    .logo-container {
+        justify-content: center;
+    }
+
+    /* Main title adjustments */
+    h2.text-5xl {
+        font-size: 2.5rem;
+        padding: 0 1rem;
+    }
+
+    /* Feature cards adjustments */
+    .flex.justify-center.mt-8.space-x-8 {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem;
+        space-x-0;
+    }
+
+    .flex.justify-center.mt-8.space-x-8 > div {
+        width: 90%;
+        margin: 0.5rem 0;
+    }
+
+    /* What We Do section adjustments */
+    .flex.justify-center.mt-12.space-x-8 {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin: 1rem;
+        space-x-0;
+    }
+
+    .flex.justify-center.mt-12.space-x-8 > div {
+        width: 90%;
+    }
+
+    /* Stats section adjustments */
+    .flex.justify-center.space-x-12 {
+        flex-direction: column;
+        gap: 2rem;
+        space-x-0;
+    }
+
+    /* Pop-up adjustments */
+    .popup-content {
+        width: 90%;
+        margin: 1rem;
+        padding: 20px;
+    }
+
+    /* Video background adjustments */
+    .video-background {
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    /* Gradient sections height adjustment */
+    .bg-gradient, .bg-gradient-omg {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Additional adjustments for very small screens */
+    .first-part, .second-part {
+        font-size: 28px;
+    }
+
+    h2.text-5xl {
+        font-size: 2rem;
+    }
+
+    .logo-container img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Adjust button sizes */
+    button, .bg-white {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
 
     </style>
 </head>
