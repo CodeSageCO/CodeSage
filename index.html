@@ -137,27 +137,22 @@
 @media (max-width: 768px) {
     /* Header adjustments */
     header {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
+        padding: 1rem;
+        gap: 1.5rem;
     }
 
     .logo-container {
         justify-content: center;
     }
 
-    /* Keep buttons horizontal - modify the existing flex space-x-6 style */
+    /* Simpler button adjustments */
     .flex.space-x-6 {
-        display: flex;
-        flex-direction: row;  /* Keep horizontal */
-        justify-content: center;
         gap: 1rem;
     }
 
     .flex.space-x-6 a,
     .flex.space-x-6 button {
-        width: auto;  /* Remove full width */
-        min-width: 120px;  /* Optional: ensure minimum width for buttons */
+        padding: 0.5rem 1rem;
     }
 
     /* Main title adjustments */
