@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeSage</title>
+    <title>Equinox SaaS Solution</title>
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Google Fonts link -->
@@ -137,11 +137,18 @@
 @media (max-width: 768px) {
     /* Header adjustments */
     header {
-        padding: 1rem;
-        gap: 1.5rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
     }
 
     .logo-container {
+        justify-content: center;
+    }
+
+    /* Keep header buttons horizontal */
+    header .flex.space-x-6 {
+        flex-direction: row;
         justify-content: center;
     }
 
